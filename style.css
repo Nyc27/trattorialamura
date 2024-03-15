@@ -620,7 +620,7 @@ body{
     font-style: italic;
     color: var(--giallino);
     background-color: var(--grigio);
-    backdrop-filter: blur();
+    -webkit-backdrop-filter: blur(2px);
     padding-inline: .54em;
     padding-block: .03em .04em;
     width: max-content;
