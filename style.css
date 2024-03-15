@@ -98,7 +98,7 @@ header{
     top: 0;
     padding-block: 5px;
     background: rgba(255, 255, 255, 0.327);
-    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     z-index: 100;
 
 }
@@ -131,7 +131,7 @@ li a{
     border: 2px solid #E9C97F;
     padding-inline: 5px;
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .attiva a:hover::after {
@@ -168,7 +168,6 @@ li a:hover::after{
     padding-inline: .54em;
     height: min-content;
     width: max-content;
-    backdrop-filter: blur(10px);
 }
 
 
@@ -192,8 +191,7 @@ li a:hover::after{
 
     header.white-bg{
         background: white;
-        backdrop-filter: none;
-        transition: 1.3s ease-in-out;
+        -webkit-backdrop-filter: none;
     }
 
     .mobile-nav{
@@ -216,6 +214,9 @@ li a:hover::after{
     }
 
     .mobile-nav.visible{
+        position: fixed;
+        top: 0;
+        left: 0;
         transform: translateX(-100%);
         z-index: 5;
     }
@@ -634,7 +635,7 @@ body{
     border: 2.3px solid var(--giallino);
     padding-inline: .54em;
     background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
 }
 
