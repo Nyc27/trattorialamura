@@ -621,7 +621,6 @@ body{
     font-style: italic;
     color: var(--giallino);
     background-color: var(--grigio);
-    -webkit-backdrop-filter: blur(2px);
     padding-inline: .54em;
     padding-block: .03em .04em;
     width: max-content;
@@ -635,8 +634,7 @@ body{
     border: 2.3px solid var(--giallino);
     padding-inline: .54em;
     background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(20px);
-
+    z-index: 10;
 }
 
 
