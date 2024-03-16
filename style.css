@@ -831,6 +831,11 @@ body{
         align-items: center;
     }
 
+    .portata-button:not(.menu-button){
+
+        font-size: max(5vw, 18px);
+
+    }
 }
 
 /* CONTENUTO PORTATE */
@@ -860,6 +865,12 @@ body{
         margin: auto;
     }
 
+}
+
+@media (max-width: 880px){
+    .content-portate:not(.portate-menu) p{
+        width: 100%;
+    }
 }
 
 .portata-menu{
@@ -1010,6 +1021,18 @@ body{
 
     img{
     width: 60px;
+    }
+}
+
+@media (max-width:560px){
+    .back-to-top{
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+
+        img{
+            width: 40px;
+        }
     }
 }
 
