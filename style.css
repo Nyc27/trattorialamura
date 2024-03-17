@@ -667,6 +667,16 @@ body{
     }
 }
 
+ @media (max-width: 880px) {
+    .mappa{
+        width: 80%;
+        aspect-ratio:13/10 !important;
+    }
+
+    .section-mappa{
+        margin-block: 45px;
+    }
+ }
 
 /* ORARI */
 
