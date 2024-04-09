@@ -6,7 +6,6 @@ mobileToggle.addEventListener('click', function () {
 
     menuVisible.classList.toggle("visible");
     mobileToggle.classList.toggle("rotate");
-    headerColor.classList.toggle("white-bg");
 
 })
 
