@@ -591,6 +591,7 @@ body{
     justify-content: center;
     gap: 3%;
     margin-inline: 20px;
+    height: max-content;
 }
 
 
@@ -599,6 +600,7 @@ body{
     linear-gradient(-360deg, rgba(0, 0, 0, 0.45)65%, rgba(255, 255, 255, 0)75%),
     url(IMG/review-img.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 400px;
     width: 290px;
     padding-top: 45px;
@@ -677,6 +679,7 @@ body{
         margin-block: 45px;
     }
  }
+
 
 /* ORARI */
 
@@ -910,11 +913,16 @@ body{
 
 .tradizione-intro{
     display: block;
-    width: 60%;
+    width: 100%;
     margin-inline: auto;
     text-align: center;
     margin-block: 55px;
 
+    p{
+        line-height: 150%;
+        width: 80%;
+        margin-inline: auto;
+    }
 }
 
 .tradizione-main{
@@ -923,7 +931,7 @@ body{
     gap: 100px;
 
     img{
-        width: clamp(30rem, 31vw, 50rem);
+        width: clamp(34rem, 31vw, 54rem);
     }
 
 
@@ -932,11 +940,15 @@ body{
 .tradizione-row{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 8%;
     margin-inline: auto;
-    width: 70%;
+    width: 80%;
+
+    p{
+        line-height: 150%;
+    }
 }
 
 .tradizione-left-text{
@@ -985,10 +997,20 @@ body{
         flex-direction: column;
         text-align: center;
         width: 90%;
+        gap: 30px;
     }
 
     .tradizione-row2{
         flex-direction: column-reverse;
+    }
+
+    .tradizione-row1::after{
+        content: '';
+        position: absolute;
+        bottom: -29px;
+        width: 80%;
+        height: 2px;
+        background: var(--giallino);  
     }
 
     .tradizione-right-text{
@@ -1089,6 +1111,35 @@ body{
     width: 80%;
 }
 
+.mid-chisiamo-text{
+    display: block;
+    position: relative;
+    width: 70%;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 220px;
+
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 150%;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -110px; 
+        width: 90%;
+        height: 2px;
+        background-color: #E9C97F;
+    }
+
+}
+
+
 .wrap-chisiamo{
     display: flex;
     gap: 50px;
@@ -1096,8 +1147,6 @@ body{
     margin-inline: auto ;
     justify-content: center;
     position: relative;
-    margin-bottom: 210px;
-
 
     .left-chisiamo{
         align-self: center;
@@ -1114,32 +1163,8 @@ body{
         width: 50%;
         margin-inline: auto;
     }
-
-    &::after{
-        content: '';
-        align-self: center ;
-        height: 2px;
-        width: 60%;
-        background-color: #E9C97F;
-        position: absolute;
-        bottom: -110px;
-    }
 }
 
-.mid-chisiamo-text{
-    display: block;
-    width: 70%;
-    margin-inline: auto;
-    text-align: center;
-
-    h2{
-        margin-bottom: 20px;
-    }
-    p{
-        line-height: 150%;
-    }
-
-}
 
 .cta-chisiamo-wrap{
     margin-block: 110px;
@@ -1180,6 +1205,15 @@ body{
         flex-direction: column-reverse;
     }
 
+    .mid-chisiamo-text{
+        margin-bottom: 100px;
+    }
+
+    .mid-chisiamo-text::after{
+        width: 100%;
+        bottom: -50px;
+    }
+
 }
 
 /* FOOTER */
@@ -1187,10 +1221,10 @@ body{
 footer{
     background: var(--grigio);
     color: white;
-    padding-block: 10px;
+    padding-block: 30px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 20px;
 
     *{
         font-family: var(--ff-p);
