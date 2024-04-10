@@ -7,6 +7,8 @@ mobileToggle.addEventListener('click', function () {
     menuVisible.classList.toggle("visible");
     mobileToggle.classList.toggle("rotate");
 
+    document.body.classList.toggle('no-scroll');
+
 })
 
 document.addEventListener('DOMContentLoaded', function() {
